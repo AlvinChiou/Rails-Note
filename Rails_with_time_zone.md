@@ -24,7 +24,13 @@ Date.current
 1.days.ago
 10.days.from_now
 ```
-諸如此類這種的就會根據 Rails 的 time zone 設定而決定當前的時區，設定的方式就是在 config/application.rb 中編輯 config.time_zone = 'Taipei' 就可以設定台灣時區。
+諸如此類這種的就會根據 Rails 的 time zone 設定而決定當前的時區，設定的方式就是在 config/application.rb 中編輯 
+
+```
+config.time_zone = 'Taipei' 
+```
+
+就可以設定台灣時區。
 
 Rails 支援很多的時區設定，但是都是根據名稱為主，而想要有詳細的列表可以在命令列(終端機)執行 rake time:zones:all 檢查。
 
